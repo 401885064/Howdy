@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">毫迪</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_username">请输入用户名</string>
+    <string name="user_passwd">请输入密码</string>
+    <string name="login">登                  录</string>
+    <string name="login_empty">用户名或密码不能为空</string>
+     <string name="login_error">用户名或密码不正确</string>
+    <string name="connect_me">公司总机\n
+ \n
+电话：010-58781000、010-82055857\n
+ \n
+广告销售\n
+\n 
+营销平台：http://e.xxx.cn \n
+联盟平台：http://union.xxx.cn \n
+销售热线：4000-360-360（服务时间9:30-18:30）\n
+咨询搜索推广：sszk@ex.xxx.cn \n
+咨询搜索代理：ssdl@xxx.cn \n
+咨询导航推广：dhsales@xxx.cn \n
+ \n
+Ideal Plaza, 18F, 58 Bei si huan xi Road, Haidian District, Beijing 100080,China  \n
+ \n
+北京市北四环西路58号理想国际大厦18层  \n
+ \n
+邮编：100080</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="faq_listview_contents">《剑灵》南天国实验室是《剑灵》最新对外限量开放的体验服务器，是运营团队与开发团队携手为了与针对《剑灵》最新的游戏内容和本地化改良在大规模上线前收集反馈验证内容所设。当后续正式运营时，会转为对外测试服（体验服）</string>
+    <string name="faq_listview_title">什么是南天国实验室？</string>
+<string name="path">Download URL</string>
+    <string name="button">Start Downloading</string>
+    <string name="success">Downloading Completed Successfully</string>
+    <string name="error">Downloading Error</string>
+    <string name="stopbutton">Pause Downloading</string>
+    <string name="sdcarderror">There is no SDCard or it is not allowed to write</string>
+	<string name="download_adress">http://dlsw.baidu.com/sw-search-sp/soft/3a/12350/QQ6.5.12968.0.1415778572.exe</string>
+</resources>

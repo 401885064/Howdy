@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mayi.julyup"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Umeng -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.mayi.julyup.application.BeeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- 登陆界面 -->
+        <activity
+            android:name=".activity.LoginActivity_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity
+            android:name=".activity.MainActivity_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 相机照相 -->
+        <activity
+            android:name="com.mayi.julyup.pictures.PhotoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 图片上传界面 -->
+        <activity
+            android:name="com.mayi.julyup.pictures.PublishedActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 相册选择图片 -->
+        <activity
+            android:name="com.mayi.julyup.pictures.PictureActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 图片展示类 -->
+        <activity
+            android:name="com.mayi.julyup.pictures.ImageGridActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 图片缓存 -->
+        <activity
+            android:name="com.mayi.julyup.pictures.BitmapCache"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 联系我们 -->
+        <activity
+            android:name="com.mayi.julyup.activity.Connect_Me_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 上传历史列表 -->
+        <activity
+            android:name="com.mayi.julyup.activity.UploadHistoryListView_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 上传历史 -->
+        <activity
+            android:name="com.mayi.julyup.activity.UploadHistory_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 上传任务（未提交审核） -->
+        <activity
+            android:name="com.mayi.julyup.activity.Upload_Unfinished_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 上传任务（提交审核）查询 -->
+        <activity
+            android:name="com.mayi.julyup.activity.UploadTaskFinishActivity_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 上传任务图片查询 -->
+        <activity
+            android:name="com.mayi.julyup.activity.Upload_Tasket_Img_Search_Show_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 自定义expandablelist -->
+        <activity
+            android:name="com.mayi.julyup.activity.PinnedSectionListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 上传历史详情 -->
+        <activity
+            android:name="com.mayi.julyup.activity.UploadHistoryInfo_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 企业中心 -->
+        <activity
+            android:name="com.mayi.julyup.activity.Company_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- FAQ -->
+        <activity
+            android:name="com.mayi.julyup.activity.FAQ_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- Download -->
+        <activity
+            android:name="com.mayi.julyup.activity.Download_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 下载列表 -->
+        <activity
+            android:name="com.mayi.julyup.activity.MyDownloadListActivity_"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 图片展示 -->
+        <activity
+            android:name="com.mayi.julyup.activity.GalleryUrlActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- Service -->
+        <service android:name="com.mayi.julyup.service.NetStateService" >
+        </service>
+        
+        
+        <!-- Umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549eaccafd98c5945f001080" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="360zhushou" />
+    </application>
+
+</manifest>
